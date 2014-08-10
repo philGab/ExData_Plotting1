@@ -7,7 +7,7 @@ for(i in 3:9){
 D[,1] <- as.Date(D[,1],format='%d/%m/%Y')
 y <- strptime(paste(D[,1], D[,2]), format = "%Y-%m-%d %H:%M:%S")
 png(filename = "plot4.png", units = "px", bg = "white")
-par(mfrow = c(2, 2), mar = c(14, 6, 2, 2), cex=.5)
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 2), cex=.5)
 plot(y, D[,3], xaxt=NULL, xlab = "",
      ylab = "Global Active Power", type="n")
 lines(y, D[,3], type="S")
